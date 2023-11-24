@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
@@ -11,7 +17,9 @@
             background-size: cover;
             color: white;
             font-family: 'Roboto', sans-serif;
+            margin: 0;
         }
+
         h1 {
             text-align: center;
             text-transform: uppercase;
@@ -19,7 +27,9 @@
             font-family: 'Roboto', sans-serif;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 10px;
+            margin: 0;
         }
+
         #movieList {
             display: flex;
             flex-wrap: wrap;
@@ -27,6 +37,7 @@
             gap: 20px;
             padding: 20px;
         }
+
         .movie-card {
             background-color: #444;
             border-radius: 10px;
@@ -35,15 +46,19 @@
             box-sizing: border-box;
             text-align: center;
             transition: transform 0.3s;
+            margin-bottom: 20px;
         }
+
         .movie-card:hover {
             transform: scale(1.1);
         }
+
         .movie-card img {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
+
         .movie-card button {
             margin-top: 10px;
             background-color: red;
@@ -54,22 +69,27 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         .movie-card button:hover {
             background-color: darkred;
         }
+
         #inputContainer {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
             margin-bottom: 20px;
+            padding: 20px;
         }
+
         #inputContainer input {
-            width: 300px;
+            width: 100%;
             padding: 10px;
             border-radius: 5px;
             border: none;
         }
+
         #inputContainer button {
             padding: 10px 20px;
             border-radius: 5px;
@@ -79,8 +99,16 @@
             color: white;
             font-size: 1.2em;
         }
+
         #inputContainer button:hover {
             background-color: #666;
+        }
+
+        /* Adicionando uma media query para dispositivos móveis */
+        @media only screen and (max-width: 600px) {
+            body {
+                background-attachment: fixed;
+            }
         }
     </style>
     <script>
